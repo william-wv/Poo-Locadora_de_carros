@@ -21,15 +21,31 @@ Este sistema simula o funcionamento básico de uma locadora de carros, aplicando
 
 ```
 src/
+├── controller/
+│ └── LocadoraController.ts
+├── db/
+│ └── Database.ts
+├── Enum/
+│ └── ECargo.ts
+├── interfaces/
+│ ├── IEntity.ts
+│ └── IVeiculoRepo.ts
 ├── models/
-│   ├── Carro.ts
-│   ├── Cliente.ts
-│   └── Locacao.ts
+│ ├── Carro.ts
+│ ├── Cliente.ts
+│ ├── DataBaseRepository.ts
+│ ├── Moto.ts
+│ ├── Peaple.ts
+│ ├── Veiculo.ts
+│ └── Vendedor.ts
 ├── services/
-│   └── LocadoraService.ts
+│ └── LocadoraService.ts
+├── view/
+│ └── View.ts
 ├── index.ts
-tsconfig.json
 package.json
+package-lock.json
+tsconfig.json
 README.md
 ```
 
@@ -104,7 +120,7 @@ O projeto possui um arquivo `tsconfig.json` com as seguintes configurações bá
 - **Encapsulamento**: Controle de acesso aos atributos via métodos.
 - **Herança e Polimorfismo** : Exemplo com possíveis subclasses de veículos.
 - **Abstração**: Separação da lógica de negócios em serviços.
-
+- **Estrutura MVC**: Model,View e Controller
 ---
 
 ## 👨‍🏫 Professor Responsável
