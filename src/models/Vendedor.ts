@@ -3,8 +3,8 @@ import { Ecargo } from "../Enum/ECargo";
 import { IEntity } from "../interfaces/IEntity";
 export class Vendedor extends Peaple {
   constructor(
-    nome: string,
-    documento: string,
+    public readonly nome: string,
+    public readonly documento: string,
     id: IEntity,
     private nivelCargo: Ecargo  
   ) {

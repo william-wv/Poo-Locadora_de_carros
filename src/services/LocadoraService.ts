@@ -3,6 +3,7 @@ import { IVeiculoRepository } from "../interfaces/IVeiculoRepo";
 import { Carro } from "../models/Carro";
 import { Moto } from "../models/Moto";
 import { Cliente } from "../models/Cliente";
+import { Vendedor } from "../models/Vendedor";
 
 export class LocadoraService {
   constructor(private repo: IVeiculoRepository) {}
@@ -14,6 +15,11 @@ export class LocadoraService {
   adicionarCliente(cliente: Cliente): void {
     this.repo.adicionarCliente(cliente);
   }
+
+  adicionarVendedor(vendedor: Vendedor): void {
+    this.repo.adicionarVendedor(vendedor);
+  }
+
 
   adicionarMoto(moto: Moto): void {
     this.repo.adicionarMoto(moto);
